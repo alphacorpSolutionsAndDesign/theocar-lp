@@ -1,0 +1,30 @@
+.body__home
+    .home__header
+        .header__nav
+            background: $color-white
+
+            @include media-breakpoint('lg')
+                height: 100px
+
+            div
+                .navbar-brand
+                    img
+                        width: 119px
+
+                .collapse
+                    .navbar-nav
+                        .nav-item
+                            display: flex
+                            align-items: center
+
+                            .nav-link
+                                color: $color-black
+                                font-size: 16px
+
+                            &.active
+                                font-weight: bold
+
+                    div
+                        .btn
+
+    
