@@ -6,12 +6,138 @@
 
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"
+    ></script>
+
     <title>TheoCar | Rent A Car</title>
 </head>
 <body class="body__index">
     <!-- Header -->
     <header class="index__header">
-        <h1>Carousel</h1>
+        <nav class="header__nav navbar navbar-expand-lg fixed-top">
+            <div class="nav__container container-fluid bg-white">
+                <a href="#" class="navbar-brand">
+                    <img src="assets/img/logo.png" alt="Logo">
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Mobile -->
+                    <ul class="navbar-nav d-lg-none mx-auto">
+                        <!-- Link Vehicles -->
+                        <li class="nav-item navbar-toggler border-0 mb-1"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                        >
+                            <button
+                                class="border-0 bg-transparent py-2"
+                                id="mobile__navStart"
+                                data-nav-target="start"
+                            >Vehículos</button>
+                        </li>
+                        <!-- Link Step by step -->
+                        <li class="nav-item navbar-toggler border-0 mb-1"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                        >
+                            <button
+                                class="border-0 bg-transparent py-2"
+                                id="mobile__navStepByStep"
+                                data-nav-target="stepByStep"
+                            >Paso a paso</button>
+                        </li>
+                        <!-- Link Location -->
+                        <li class="nav-item navbar-toggler border-0 mb-1"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                        >
+                            <button
+                                class="border-0 bg-transparent py-2"
+                                id="mobile__navLocation"
+                                data-nav-target="location"
+                            >Ubicación</button>
+                        </li>
+                        <!-- Link Services -->
+                        <li class="nav-item navbar-toggler border-0 mb-1"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                        >
+                            <button
+                                class="border-0 bg-transparent py-2"
+                                id="mobile__navServices"
+                                data-nav-target="services"
+                            >Servicios</button>
+                        </li>
+                        <!-- Link Contact -->
+                        <li class="nav-item navbar-toggler border-0 mb-3"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                        >
+                            <button
+                                class="border-0 bg-transparent py-2"
+                                id="mobile__navContact"
+                                data-nav-target="contact"
+                            >Contacto</button>
+                        </li>
+                    </ul>
+
+                    <!-- Desktop -->
+                     <ul class="navbar-nav d-none d-lg-flex">
+                        <li class="nav-item">
+                            <a href="#start" class="nav-link active">Vehículos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#stepByStep" class="nav-link">Paso a paso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#location" class="nav-link">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contacto</a>
+                        </li>
+                     </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header__carousel carousel slide carousel-fade" id="carouselHeader" data-bs-ride="carousel" data-bs-pause="true">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="slide slide1">
+
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="slide slide2">
+
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="slide slide3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- Main -->

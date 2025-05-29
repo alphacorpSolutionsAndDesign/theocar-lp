@@ -1,47 +1,71 @@
-// Red
+// Button Red
 .button-red
     border: 2px solid $color-red
     background: $color-red
     color: $color-white
-    font-size: 14px
+    font-size: 16px
+    font-weight: bold
     padding: 11px 16px
+    width: 170px
+    height: 41px
 
-    @include media-breakpoint('xxl')
-        border: 3px solid $color-red
-        font-size: 16px
-
-// Red Hover
+// Button Red Hover
 .button-red:hover
+    border: 2px solid $color-red
     background: $color-white
-    color: $color-red
+    color: $color-black
 
-// Light Red
-.button-lightRed
-        border: 2px solid $color-red
-        background: $color-smoke
-        color: $color-red
-        font-size: 14px
-        padding: 11px 16px
+// Button Red Clicked
+.button-red:active
+    border: 2px solid $color-black
+    background: $color-black
+    color: $color-white
 
-    @include media-breakpoint('xxl')
-        border: 3px solid $color-red
-        font-size: 16px
-
-// Light Red Hover
-.button-lightRed:hover
+// Button Red + Whatsapp Icon
+.button-red-whatsapp-icon
+    border: 2px solid $color-red
     background: $color-red
-    color: $color-smoke
+    color: $color-white
+    font-size: 16px
+    font-weight: bold
+    padding: 11px 16px
+    width: 199px
+    height: 41px
 
-// Light
-.button-light
-        background: $color-white
-        color: $color-black
-        font-size: 14px
-        padding: 11px 16px
+// Button Red Hover + Whatsapp Icon
+.button-red-whatsapp-icon:hover
+    border: 2px solid $color-red
+    background: $color-white
+    color: $color-black
 
-    @include media-breakpoint('xxl')
-        font-size: 16px
+// Button Red Clicked + Whatsapp Icon
+.button-red-whatsapp-icon:active
+    border: 2px solid $color-black
+    background: $color-black
+    color: $color-white
 
-// Light Hover
-.button-light:hover
-    background: $color-lightGrey
+// Button Whatsapp + Green Icon
+.button-whatsapp
+    border: 2px solid $color-white
+    background: $color-white
+    color: $color-black
+    font-size: 16px
+    font-weight: bold
+    padding: 10px
+    width: 154px
+    height: 44px
+
+    span
+        color: $color-green
+
+// Button Whatsapp Hover + Green Icon
+.button-whatsapp:hover
+    border: 2px solid $color-grey
+    background: $color-white
+    color: $color-black
+
+// Button Whatsapp Clicked + Green Icon
+.button-whatsapp:active
+    border: 2px solid $color-black
+    background: $color-white
+    color: $color-black
