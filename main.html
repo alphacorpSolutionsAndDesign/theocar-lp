@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
     <script
@@ -35,7 +36,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Mobile -->
-                    <ul class="navbar-nav d-lg-none mx-auto">
+                    <ul class="navbar-nav mobile d-lg-none mx-auto">
                         <!-- Link Vehicles -->
                         <li class="nav-item navbar-toggler border-0 mb-1"
                             data-bs-toggle="collapse"
@@ -94,23 +95,27 @@
                     </ul>
 
                     <!-- Desktop -->
-                     <ul class="navbar-nav d-none d-lg-flex">
-                        <li class="nav-item">
+                    <ul class="navbar-nav desktop d-none d-lg-flex ms-auto">
+                        <li class="nav-item start">
                             <a href="#start" class="nav-link active">Vehículos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item stepByStep">
                             <a href="#stepByStep" class="nav-link">Paso a paso</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item location">
                             <a href="#location" class="nav-link">Ubicación</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item services">
                             <a href="#services" class="nav-link">Servicios</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item contact">
                             <a href="#contact" class="nav-link">Contacto</a>
                         </li>
-                     </ul>
+                    </ul>
+                    <a href="https://wa.me/+56966923423" class="button button-red-whatsapp-icon rounded-pill" target="_blank">
+                        <span class="span icon bi bi-whatsapp fs-5 pe-2"></span>
+                        <span class="span text">+56 9 6692 3423</span>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -119,30 +124,94 @@
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class="slide slide1">
-
+                        <p class="button carousel-button-light rounded-pill">Cuidamos tu bolsillo</p>
+                        <h1 class="title">
+                            Los más<br>
+                            económicos<br>
+                            de la región
+                        </h1>
+                        <div class="info">
+                            <img class="arrow arrow-end" src="assets/img/index-header/arrow-end.png" alt="Arrow end">
+                            <p class="arrow arrow-text ms-2 me-4">Desde $30.000 IVA incl.</p>
+                            <img class="arrow arrow-start" src="assets/img/index-header/arrow-start.png" alt="Arrow start">
+                        </div>
+                        <div class="car">
+                            <img src="assets/img/index-header/car-slide1.png" alt="Car slide 1">
+                        </div>
                     </div>
                 </div>
 
                 <!-- Slide 2 -->
                 <div class="carousel-item">
                     <div class="slide slide2">
-
+                        <p class="button carousel-button-light rounded-pill">Furgones</p>
+                        <h1 class="title">
+                            Traslados para<br>
+                            empresas y eventos
+                        </h1>
+                        <div class="info">
+                            <img class="arrow arrow-end" src="assets/img/index-header/arrow-end.png" alt="Arrow end">
+                            <p class="arrow arrow-text ms-2 me-4">Cotiza acá!</p>
+                            <img class="arrow arrow-start" src="assets/img/index-header/arrow-start.png" alt="Arrow start">
+                        </div>
+                        <div class="car">
+                            <img src="assets/img/index-header/car-slide1.png" alt="Car slide 1">
+                        </div>
                     </div>
                 </div>
 
                 <!-- Slide 3 -->
                 <div class="carousel-item">
                     <div class="slide slide3">
-
+                        <p class="button carousel-button-light rounded-pill">Para minería</p>
+                        <h1 class="title">
+                            Arriendo<br>
+                            de camionetas
+                        </h1>
+                        <div class="info">
+                            <img class="arrow arrow-end" src="assets/img/index-header/arrow-end.png" alt="Arrow end">
+                            <p class="arrow arrow-text ms-2 me-4">Desde $65.000</p>
+                            <img class="arrow arrow-start" src="assets/img/index-header/arrow-start.png" alt="Arrow start">
+                        </div>
+                        <div class="car">
+                            <img src="assets/img/index-header/car-slide1.png" alt="Car slide 1">
+                        </div>
                     </div>
                 </div>
+            </div>
+            <!-- Indicators -->
+            <div class="carousel-indicators text-center">
+                <button
+                    type="button"
+                    data-bs-target="#carouselHeader"
+                    data-bs-slide-to="0"
+                    aria-label="Slide 1"
+                    aria-current="true"
+                    class="rounded-circle active"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselHeader"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                    class="rounded-circle"
+                ></button>
+                <button
+                    type="button"
+                    data-bs-target="#carouselHeader"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                    class="rounded-circle"
+                ></button>
             </div>
         </div>
     </header>
 
     <!-- Main -->
     <main class="index__main">
+        <section class="section our-vehicles" id="ourVehicles">
 
+        </section>
     </main>
 
     <!-- Footer -->

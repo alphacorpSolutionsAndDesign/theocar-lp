@@ -1,7 +1,15 @@
 .body__index
     .index__header
         .header__carousel
+            height: 685px
+
+            @include media-breakpoint('lg')
+                height: 710px
+
             .carousel-inner
+                contain: layout style
+                overflow: visible
+
                 .carousel-item
                     .slide
                         width: 100%
@@ -9,6 +17,70 @@
 
                         @include media-breakpoint('lg')
                             height: 710px
+
+                        .button
+                            position: relative
+                            top: 125px
+                            left: 13px
+
+                            @include media-breakpoint('md')
+                                top: 220px
+                                left: 37px
+
+                        .title
+                            position: relative
+                            top: 125px
+                            left: 13px
+                            font-size: 30px
+                            font-weight: bold
+                            color: $color-white
+
+                            @include media-breakpoint('md')
+                                top: 220px
+                                left: 37px
+                                font-size: 55px
+
+                        .info
+                            position: relative
+                            display: inline-flex
+                            top: 125px
+                            left: 13px
+
+                            @include media-breakpoint('md')
+                                top: 220px
+                                left: 37px
+
+                            .arrow
+                                position: relative
+
+                            .arrow-text
+                                font-size: 16px
+                                color: $color-white
+
+                            .arrow-end
+                                margin-top: 11px
+                                width: 26px
+                                height: 2px
+
+                            .arrow-start
+                                margin-top: 4.5px
+                                width: 39px
+                                height: 15px
+
+                        .car
+                            position: relative
+                            top: 260px
+                            left: 50px
+
+                            @include media-breakpoint('md')
+                                top: 100px
+                                left: 550px
+
+                            img
+                                width: 300px
+
+                                @include media-breakpoint('md')
+                                    width: 600px
 
                     .slide1
                         background: url('../img/index-header/header-carousel1.png')
@@ -19,6 +91,8 @@
                             background-size: 100% 710px
                             background-position: center
 
+                        
+
                     .slide2
                         background: url('../img/index-header/header-carousel2.png')
                         background-size: auto 100%
@@ -28,6 +102,12 @@
                             background-size: 100% 710px
                             background-position: center
 
+                        .car
+                            top: 296px
+
+                            @include media-breakpoint('md')
+                                top: 166px
+
                     .slide3
                         background: url('../img/index-header/header-carousel3.png')
                         background-size: auto 100%
@@ -36,3 +116,33 @@
                         @include media-breakpoint('md')
                             background-size: 100% 710px
                             background-position: center
+
+                        .car
+                            top: 296px
+
+                            @include media-breakpoint('md')
+                                top: 166px
+
+            .carousel-indicators
+                position: relative
+                top: -300px
+                left: 130px
+                margin: 0
+                width: fit-content
+
+                @include media-breakpoint('md')
+                    top: -100px
+                    left: 13px
+
+                button
+                    width: 8px
+                    height: 8px
+                    border: 0
+                    margin: 2.5px 20px 0 20px
+                    opacity: 1
+
+                button.active
+                    width: 14px
+                    height: 14px
+                    margin-top: 0
+                    background: $color-red
