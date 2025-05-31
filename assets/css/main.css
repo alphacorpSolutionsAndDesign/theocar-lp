@@ -12414,7 +12414,7 @@ a {
 }
 .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide .car {
   position: absolute;
-  top: 500px;
+  top: 520px;
   left: 50%;
   transform: translate(-50%);
   width: 300px;
@@ -12600,7 +12600,7 @@ a {
   background-size: 100% auto;
 }
 .body__index .index__main .main__our-vehicles .our-vehicles__top .top__title {
-  padding-top: 35px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
