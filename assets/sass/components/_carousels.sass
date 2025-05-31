@@ -68,24 +68,27 @@
                                 height: 15px
 
                         .car
-                            position: relative
-                            top: 260px
-                            left: 50px
+                            position: absolute
+                            top: 500px
+                            left: 50%
+                            transform: translate(-50%)
+                            width: 300px
 
                             @include media-breakpoint('md')
-                                top: 100px
-                                left: 550px
+                                top: 390px
+                                left: 850px
+                                width: 600px
 
                             img
-                                width: 300px
+                                width: 100%
 
-                                @include media-breakpoint('md')
-                                    width: 600px
+                                // @include media-breakpoint('md')
+                                //     width: 600px
 
                     .slide1
                         background: url('../img/index-header/header-carousel1.png')
                         background-size: auto 100%
-                        background-position: top right -380px
+                        background-position: top right -375px
 
                         @include media-breakpoint('md')
                             background-size: 100% 710px
@@ -96,36 +99,36 @@
                     .slide2
                         background: url('../img/index-header/header-carousel2.png')
                         background-size: auto 100%
-                        background-position: top right -380px
+                        background-position: top right -375px
 
                         @include media-breakpoint('md')
                             background-size: 100% 710px
                             background-position: center
 
-                        .car
-                            top: 296px
+                        // .car
+                        //     top: 316px
 
-                            @include media-breakpoint('md')
-                                top: 166px
+                        //     @include media-breakpoint('md')
+                        //         top: 166px
 
                     .slide3
                         background: url('../img/index-header/header-carousel3.png')
                         background-size: auto 100%
-                        background-position: top right -380px
+                        background-position: top right -375px
 
                         @include media-breakpoint('md')
                             background-size: 100% 710px
                             background-position: center
 
-                        .car
-                            top: 296px
+                        // .car
+                        //     top: 316px
 
-                            @include media-breakpoint('md')
-                                top: 166px
+                        //     @include media-breakpoint('md')
+                        //         top: 166px
 
             .carousel-indicators
                 position: relative
-                top: -300px
+                top: -280px
                 left: 130px
                 margin: 0
                 width: fit-content
@@ -135,14 +138,100 @@
                     left: 13px
 
                 button
-                    width: 8px
-                    height: 8px
+                    width: 10px
+                    height: 10px
                     border: 0
-                    margin: 2.5px 20px 0 20px
-                    opacity: 1
+                    margin: 0 20px
+                    background: $color-white
+                    opacity: .7
+                    transform: scale(1)
+                    transition: transform 0.4s ease, background 0.4s ease
 
                 button.active
-                    width: 14px
-                    height: 14px
-                    margin-top: 0
-                    background: $color-red
+                    transform: scale(1.75)
+                    opacity: 1
+
+    .index__main
+        .main__our-vehicles
+            .our-vehicles__bottom
+                .our-vehicles__carousel
+                    .carousel-inner
+                        contain: layout style
+                        overflow: visible
+                        width: 90%
+                        height: 500px
+                        margin: 0 auto
+
+                        @include media-breakpoint('md')
+                            width: 807px
+                            height: 404px
+                            margin: 0 24px 0 auto
+
+                        .carousel-item
+                            width: 100%
+                            height: 500px
+                            background: url('../img/index-our_vehicles/carousel-bg.png')
+                            background-size: auto 100%
+                            background-position: center
+                            border-radius: 30px
+
+                            @include media-breakpoint('md')
+                                height: 100%
+                                background-size: 100%
+
+                            h1
+                                color: $color-white
+                                font-size: 50px
+                                font-weight: bold
+                                text-align: center
+                                margin-top: 40px
+
+                                @include media-breakpoint('md')
+                                    text-align: start
+                                    margin-left: 46px
+
+                            p
+                                color: $color-white
+                                font-family: "Inter Bold", sans-serif
+                                font-size: 22px
+                                font-weight: bold
+                                text-align: center
+                                padding: 0 10px
+
+                                @include media-breakpoint('md')
+                                    width: 400px
+                                    font-family: "Inter Variable", sans-serif
+                                    font-weight: normal
+                                    text-align: start
+                                    padding: 0
+                                    margin-left: 46px
+
+                            img
+                                position: absolute
+                                width: 250px
+                                top: 220px
+                                left: 50%
+                                transform: translate(-50%)
+
+                                @include media-breakpoint('md')
+                                    width: 400px
+                                    top: 200px
+                                    left: 350px
+                                    transform: none
+
+                            .button
+                                position: absolute
+                                width: 250px
+                                padding: 11px 15.5px
+                                font-size: 16px
+                                font-weight: bold
+                                top: 420px
+                                left: 50%
+                                transform: translate(-50%)
+
+                                @include media-breakpoint('md')
+                                    width: fit-content
+                                    padding: 5.5px 15.5px
+                                    top: 270px
+                                    left: 0px
+                                    transform: none

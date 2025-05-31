@@ -8,7 +8,34 @@
     .index__main
         z-index: 1
 
-        .our-vehicles
+        .main__our-vehicles
             height: 990px
-            background: url('../img/index-our_vehicles/bg-our_vehicles.png')
+            background: url('../img/index-our_vehicles/background.png')
             background-size: 100% auto
+
+            .our-vehicles__top
+                .top__title
+                    padding-top: 35px
+                    padding-bottom: 20px
+
+                    @include media-breakpoint('md')
+                        padding-top: 130px
+                        padding-right: 37px
+
+                    h1
+                        font-size: 40px
+                        font-weight: bold
+                        text-align: center
+
+                        @include media-breakpoint('md')
+                            font-size: 40px
+                            text-align: end
+
+                    p
+                        display: none
+                        text-align: center
+
+                        @include media-breakpoint('md')
+                            display: block
+                            font-size: 32px
+                            text-align: end

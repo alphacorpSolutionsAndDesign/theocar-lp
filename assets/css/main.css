@@ -12079,12 +12079,20 @@ textarea.form-control-lg {
   }
 }
 /* BASE */
+.scale-in {
+  animation: scaleIn 1s ease-in-out forwards;
+}
+
+.scale-out {
+  animation: scaleOut 1s ease-in-out forwards;
+}
+
 .fade-in {
-  animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeIn 1s ease forwards;
 }
 
 .fade-out {
-  animation: fadeOut 1s ease-in-out forwards;
+  animation: fadeOut 1s ease forwards;
 }
 
 .bg__transparent {
@@ -12132,7 +12140,7 @@ a {
   vertical-align: middle;
 }
 
-@keyframes fadeIn {
+@keyframes scaleIn {
   0% {
     opacity: 0;
     transform: scale(0.98);
@@ -12142,7 +12150,7 @@ a {
     transform: scale(1);
   }
 }
-@keyframes fadeOut {
+@keyframes scaleOut {
   0% {
     opacity: 1;
     transform: scale(1);
@@ -12152,32 +12160,44 @@ a {
     transform: scale(1.1);
   }
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @font-face {
   font-family: "Inter Variable";
   src: url("../fonts/inter-variable.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-.font__sora-variable {
+@font-face {
+  font-family: "Inter Bold";
+  src: url("../fonts/inter-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+.font__inter-variable {
   font-family: "Inter Variable", sans-serif;
+}
+
+.font__inter-bold {
+  font-family: "Inter Bold", sans-serif;
 }
 
 .text__justify {
   text-align: justify;
-}
-
-.text__between-lines {
-  border-top: 2px solid #999;
-  padding-top: 2px;
-  border-bottom: 2px solid #999;
-}
-
-.text__shadow-1 {
-  text-shadow: 0 0 5px #000;
-}
-
-.text__999 {
-  color: #999;
 }
 
 .fs-7 {
@@ -12261,13 +12281,13 @@ a {
 .button-red:hover {
   border: 2px solid #d60229;
   background: #fff;
-  color: #000;
+  color: #000 !important;
 }
 
 .button-red:active {
   border: 2px solid #000;
   background: #000;
-  color: #fff;
+  color: #fff !important;
 }
 
 .button-red-whatsapp-icon {
@@ -12393,28 +12413,26 @@ a {
   height: 15px;
 }
 .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide .car {
-  position: relative;
-  top: 260px;
-  left: 50px;
-}
-@media (min-width: 768px) {
-  .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide .car {
-    top: 100px;
-    left: 550px;
-  }
-}
-.body__index .index__header .header__carousel .carousel-inner .carousel-item .slide .car img {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translate(-50%);
   width: 300px;
 }
 @media (min-width: 768px) {
-  .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide .car img {
+  .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide .car {
+    top: 390px;
+    left: 850px;
     width: 600px;
   }
+}
+.body__index .index__header .header__carousel .carousel-inner .carousel-item .slide .car img {
+  width: 100%;
 }
 .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide1 {
   background: url("../img/index-header/header-carousel1.png");
   background-size: auto 100%;
-  background-position: top right -380px;
+  background-position: top right -375px;
 }
 @media (min-width: 768px) {
   .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide1 {
@@ -12425,7 +12443,7 @@ a {
 .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide2 {
   background: url("../img/index-header/header-carousel2.png");
   background-size: auto 100%;
-  background-position: top right -380px;
+  background-position: top right -375px;
 }
 @media (min-width: 768px) {
   .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide2 {
@@ -12433,18 +12451,10 @@ a {
     background-position: center;
   }
 }
-.body__index .index__header .header__carousel .carousel-inner .carousel-item .slide2 .car {
-  top: 296px;
-}
-@media (min-width: 768px) {
-  .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide2 .car {
-    top: 166px;
-  }
-}
 .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide3 {
   background: url("../img/index-header/header-carousel3.png");
   background-size: auto 100%;
-  background-position: top right -380px;
+  background-position: top right -375px;
 }
 @media (min-width: 768px) {
   .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide3 {
@@ -12452,17 +12462,9 @@ a {
     background-position: center;
   }
 }
-.body__index .index__header .header__carousel .carousel-inner .carousel-item .slide3 .car {
-  top: 296px;
-}
-@media (min-width: 768px) {
-  .body__index .index__header .header__carousel .carousel-inner .carousel-item .slide3 .car {
-    top: 166px;
-  }
-}
 .body__index .index__header .header__carousel .carousel-indicators {
   position: relative;
-  top: -300px;
+  top: -280px;
   left: 130px;
   margin: 0;
   width: -moz-fit-content;
@@ -12475,17 +12477,112 @@ a {
   }
 }
 .body__index .index__header .header__carousel .carousel-indicators button {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border: 0;
-  margin: 2.5px 20px 0 20px;
-  opacity: 1;
+  margin: 0 20px;
+  background: #fff;
+  opacity: 0.7;
+  transform: scale(1);
+  transition: transform 0.4s ease, background 0.4s ease;
 }
 .body__index .index__header .header__carousel .carousel-indicators button.active {
-  width: 14px;
-  height: 14px;
-  margin-top: 0;
-  background: #d60229;
+  transform: scale(1.75);
+  opacity: 1;
+}
+.body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner {
+  contain: layout style;
+  overflow: visible;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner {
+    width: 807px;
+    height: 404px;
+    margin: 0 24px 0 auto;
+  }
+}
+.body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item {
+  width: 100%;
+  height: 500px;
+  background: url("../img/index-our_vehicles/carousel-bg.png");
+  background-size: auto 100%;
+  background-position: center;
+  border-radius: 30px;
+}
+@media (min-width: 768px) {
+  .body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item {
+    height: 100%;
+    background-size: 100%;
+  }
+}
+.body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item h1, .body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item .h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+}
+@media (min-width: 768px) {
+  .body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item h1, .body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item .h1 {
+    text-align: start;
+    margin-left: 46px;
+  }
+}
+.body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item p {
+  color: #fff;
+  font-family: "Inter Bold", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 10px;
+}
+@media (min-width: 768px) {
+  .body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item p {
+    width: 400px;
+    font-family: "Inter Variable", sans-serif;
+    font-weight: normal;
+    text-align: start;
+    padding: 0;
+    margin-left: 46px;
+  }
+}
+.body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item img {
+  position: absolute;
+  width: 250px;
+  top: 220px;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (min-width: 768px) {
+  .body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item img {
+    width: 400px;
+    top: 200px;
+    left: 350px;
+    transform: none;
+  }
+}
+.body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item .button {
+  position: absolute;
+  width: 250px;
+  padding: 11px 15.5px;
+  font-size: 16px;
+  font-weight: bold;
+  top: 420px;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (min-width: 768px) {
+  .body__index .index__main .main__our-vehicles .our-vehicles__bottom .our-vehicles__carousel .carousel-inner .carousel-item .button {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5.5px 15.5px;
+    top: 270px;
+    left: 0px;
+    transform: none;
+  }
 }
 
 /* PAGES */
@@ -12497,10 +12594,42 @@ a {
 .body__index .index__main {
   z-index: 1;
 }
-.body__index .index__main .our-vehicles {
+.body__index .index__main .main__our-vehicles {
   height: 990px;
-  background: url("../img/index-our_vehicles/bg-our_vehicles.png");
+  background: url("../img/index-our_vehicles/background.png");
   background-size: 100% auto;
+}
+.body__index .index__main .main__our-vehicles .our-vehicles__top .top__title {
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .body__index .index__main .main__our-vehicles .our-vehicles__top .top__title {
+    padding-top: 130px;
+    padding-right: 37px;
+  }
+}
+.body__index .index__main .main__our-vehicles .our-vehicles__top .top__title h1, .body__index .index__main .main__our-vehicles .our-vehicles__top .top__title .h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .body__index .index__main .main__our-vehicles .our-vehicles__top .top__title h1, .body__index .index__main .main__our-vehicles .our-vehicles__top .top__title .h1 {
+    font-size: 40px;
+    text-align: end;
+  }
+}
+.body__index .index__main .main__our-vehicles .our-vehicles__top .top__title p {
+  display: none;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .body__index .index__main .main__our-vehicles .our-vehicles__top .top__title p {
+    display: block;
+    font-size: 32px;
+    text-align: end;
+  }
 }
 
 /* THEMES *//*# sourceMappingURL=main.css.map */

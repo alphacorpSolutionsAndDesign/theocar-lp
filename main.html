@@ -12,6 +12,7 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"
     ></script>
+    <!-- <script src="assets/js/carousel.js"></script> -->
 
     <title>TheoCar | Rent A Car</title>
 </head>
@@ -125,7 +126,7 @@
                 <div class="carousel-item active">
                     <div class="slide slide1">
                         <p class="button carousel-button-light rounded-pill">Cuidamos tu bolsillo</p>
-                        <h1 class="title">
+                        <h1 class="title font__inter-bold">
                             Los más<br>
                             económicos<br>
                             de la región
@@ -145,7 +146,7 @@
                 <div class="carousel-item">
                     <div class="slide slide2">
                         <p class="button carousel-button-light rounded-pill">Furgones</p>
-                        <h1 class="title">
+                        <h1 class="title font__inter-bold">
                             Traslados para<br>
                             empresas y eventos
                         </h1>
@@ -164,7 +165,7 @@
                 <div class="carousel-item">
                     <div class="slide slide3">
                         <p class="button carousel-button-light rounded-pill">Para minería</p>
-                        <h1 class="title">
+                        <h1 class="title font__inter-bold">
                             Arriendo<br>
                             de camionetas
                         </h1>
@@ -209,8 +210,38 @@
 
     <!-- Main -->
     <main class="index__main">
-        <section class="section our-vehicles" id="ourVehicles">
+        <section class="section main__our-vehicles" id="ourVehicles">
+            <div class="our-vehicles__top">
+                <div class="top__title text-center">
+                    <h1 class="font__inter-bold">Todos nuestros vehículos</h1>
+                    <p>Theocar a tu disposición</p>
+                </div>
+            </div>
+            <div class="our-vehicles__bottom">
+                <div class="our-vehicles__carousel carousel slide carousel-fade" id="carouselOurVehicles" data-bs-ride="carousel" data-bs-pause="true">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <h1 class="font__inter-bold">SUV</h1>
+                            <p>
+                                Recorre la ciudad junto a tu familia, con total comodidad.
+                            </p>
+                            <img src="assets/img/index-our_vehicles/mg.png" alt="SUV">
+                            <p class="button button-red rounded-pill">Conoce nuestros modelos</p>
+                        </div>
 
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <h1 class="font__inter-bold">City car</h1>
+                            <p>
+                                Muévete ágil por la ciudad, ideal para días dinámicos y estacionar sin problemas.
+                            </p>
+                            <img src="assets/img/index-our_vehicles/vw-gol.png" alt="City car">
+                            <p class="button button-red rounded-pill">Conoce nuestros modelos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
