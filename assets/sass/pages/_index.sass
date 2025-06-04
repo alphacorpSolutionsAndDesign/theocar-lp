@@ -1,5 +1,7 @@
 .body__index
-    background: $color-white
+    background: url('../img/background.png')
+    background-size: 100% auto
+    background-position: center
     width: 100%
     height: 100dvh
 
@@ -9,9 +11,10 @@
         z-index: 1
 
         .main__our-vehicles
-            height: 990px
-            background: url('../img/index-our_vehicles/background.png')
-            background-size: 100% auto
+            height: 750px
+
+            @include media-breakpoint('md')
+                height: 800px
 
             .our-vehicles__top
                 .top__title
@@ -39,3 +42,357 @@
                             display: block
                             font-size: 32px
                             text-align: end
+
+        .main__steps
+            height: 1400px
+            background: url('../img/index-steps/background-mobile.png')
+            background-size: 100% 100%
+
+            @include media-breakpoint('md')
+                height: 700px
+                background: url('../img/index-steps/background.png')
+                background-size: 100% 100%
+
+            .steps__content
+                position: relative
+                top: 130px
+                width: 60%
+                text-align: center
+
+                @include media-breakpoint('md')
+                    width: 80%
+
+                .content__top
+                    .top__title
+                        font-size: 40px
+                        color: $color-white
+                        font-weight: bold
+
+                        @include media-breakpoint('md')
+                            font-size: 61px
+
+                    .top__subtitle
+                        font-size: 32px
+                        color: $color-red
+
+                .content__down
+                    margin-top: 100px
+                    display: block
+                    justify-content: center
+
+                    @include media-breakpoint('md')
+                        margin-top: 50px
+                        display: flex
+
+                    div
+                        width: fit-content
+                        text-align: center
+                        color: $color-white
+
+                        img
+                            width: 150px
+
+                            @include media-breakpoint('md')
+                                width: 180px
+
+                        .text
+                            font-size: 26px
+                            line-height: 30px
+                            margin-top: 15px
+
+                        .middle-dash
+                            position: relative
+                            width: 53px
+                            height: 2px
+                            top: 30%
+                            transform: rotate(90deg)
+
+                            @include media-breakpoint('md')
+                                transform: rotate(0deg)
+
+        .main__location
+            height: 750px
+
+            @include media-breakpoint('md')
+                height: 700px
+
+            .location__content
+                position: relative
+                top: 10px
+
+                .content__top
+                    .top__title
+                        width: 90%
+                        font-size: 40px
+                        text-align: center
+                        line-height: 50px
+                        margin: 0 auto
+
+                        @include media-breakpoint('md')
+                            width: 55%
+                            font-size: 61px
+                            text-align: end
+                            line-height: 70px
+                            margin: 0 41px 0 auto
+
+                    .top__subtitle
+                        width: 90%
+                        font-size: 28px
+                        text-align: center
+                        margin: 20px auto 0
+
+                        @include media-breakpoint('md')
+                            width: 70%
+                            font-size: 36px
+                            text-align: end
+                            margin: 30px 41px 0 auto
+
+                .content__bottom
+                    .bottom__map
+                        margin-top: 50px
+                        text-align: center
+
+                        @include media-breakpoint('md')
+                            margin-top: 15px
+
+                        @include media-breakpoint('lg')
+                            margin-top: 50px
+
+                        .gmaps
+                            width: 90%
+                            height: 280px
+                            border: none
+                            border-radius: 30px
+
+                            @include media-breakpoint('md')
+                                width: 80%
+                                height: 250px
+                                border-radius: 20px
+
+                            @include media-breakpoint('lg')
+                                width: 60%
+
+                            @include media-breakpoint('xl')
+                                height: 280px
+
+        .main__elections
+            background: $color-white
+            height: 800px
+
+            @include media-breakpoint('md')
+                height: 470px
+
+            @include media-breakpoint('lg')
+                height: 500px
+
+            @include media-breakpoint('xl')
+                height: 550px
+
+            .elections__content
+                .content__top
+                    .top__title
+                        padding-top: 70px
+                        font-size: 35px
+
+                        @include media-breakpoint('md')
+                            font-size: 61px
+
+                .content__bottom
+                    margin-top: 50px
+                    width: 100%
+                    column-gap: 30px
+
+                    div
+                        .card
+                            width: 330px
+                            height: 180px
+                            border-radius: 30px
+                            border: none
+
+                            @include media-breakpoint('md')
+                                width: 220px
+                                height: 220px
+                                border-radius: 20px
+                                
+
+                            @include media-breakpoint('lg')
+                                width: 240px
+                                height: 240px
+
+                            @include media-breakpoint('xl')
+                                width: 280px
+                                height: 280px
+
+                            .card-body
+                                color: $color-white
+                                padding: 0
+                                text-align: center
+
+                                .card-title
+                                    position: absolute
+                                    width: 100%
+                                    font-size: 30px
+                                    bottom: 70px
+
+                                    @include media-breakpoint('md')
+                                        font-size: 22px
+                                        bottom: 50px
+
+                                    @include media-breakpoint('lg')
+                                        font-size: 24px
+                                        bottom: 60px
+
+                                    @include media-breakpoint('xl')
+                                        font-size: 30px
+                                        bottom: 70px
+
+                                .card-text
+                                    position: absolute
+                                    font-size: 20px
+                                    bottom: 20px
+                                    margin: 0 10px
+
+                                    @include media-breakpoint('md')
+                                        font-size: 14px
+
+                                    @include media-breakpoint('lg')
+                                        font-size: 15px
+
+                                    @include media-breakpoint('xl')
+                                        font-size: 20px
+
+                        .election1
+                            background: url('../img/index-elections/election1-mobile.png')
+                            background-size: 100% 100%
+
+                            @include media-breakpoint('md')
+                                background: url('../img/index-elections/election1.png')
+                                background-size: 100% 100%
+
+                        .election2
+                            background: url('../img/index-elections/election2-mobile.png')
+                            background-size: 100% 100%
+
+                            @include media-breakpoint('md')
+                                background: url('../img/index-elections/election2.png')
+                                background-size: 100% 100%
+
+                        .election3
+                            background: url('../img/index-elections/election3-mobile.png')
+                            background-size: 100% 100%
+
+                            @include media-breakpoint('md')
+                                background: url('../img/index-elections/election3.png')
+                                background-size: 100% 100%
+
+        .main__services
+            background: $color-white
+            height: 830px
+
+            @include media-breakpoint('md')
+                height: 520px
+
+            @include media-breakpoint('lg')
+                height: 590px
+
+            @include media-breakpoint('xl')
+                height: 670px
+
+            .services__content
+                .content__top
+                    .top__title
+                        padding-top: 50px
+                        font-size: 40px
+                        line-height: 40px
+
+                        @include media-breakpoint('md')
+                            font-size: 61px
+
+                    .top__subtitle
+                        font-size: 28px
+
+                        @include media-breakpoint('md')
+                            font-size: 36px
+
+                .content__middle
+                    margin-top: 40px
+                    width: 100%
+                    column-gap: 50px
+
+                    div
+                        .card
+                            width: 330px
+                            height: 251px
+                            border-radius: 30px
+                            border: none
+
+                            @include media-breakpoint('md')
+                                width: 300px
+                                height: 228px
+                                border-radius: 20px
+
+                            @include media-breakpoint('lg')
+                                width: 400px
+                                height: 304px
+
+                            @include media-breakpoint('xl')
+                                width: 493px
+                                height: 375px
+
+                            .card-body
+                                color: $color-white
+                                padding: 0
+                                text-align: center
+
+
+                                .card-title
+                                    position: absolute
+                                    width: 100%
+                                    font-size: 30px
+                                    bottom: 50px
+                                    padding: 0 20px
+
+                                    @include media-breakpoint('md')
+                                        font-size: 20px
+                                        padding: 0 10px
+
+                                    @include media-breakpoint('lg')
+                                        font-size: 24px
+
+                                    @include media-breakpoint('xl')
+                                        font-size: 30px
+                                        padding: 0 100px
+                                        bottom: 80px
+
+                                .card-text
+                                    position: absolute
+                                    width: 100%
+                                    font-size: 20px
+                                    bottom: 10px
+                                    padding: 0 40px
+
+                                    @include media-breakpoint('md')
+                                        font-size: 16px
+
+                                    @include media-breakpoint('lg')
+                                        font-size: 18px
+
+                                    @include media-breakpoint('xl')
+                                        font-size: 20px
+                                        padding: 0 120px
+                                        bottom: 30px
+
+                        .service1
+                            background: url('../img/index-services/service1.png')
+                            background-size: 100% 100%
+
+                        .service2
+                            background: url('../img/index-services/service2.png')
+                            background-size: 100% 100%
+
+                .content__bottom
+                    margin-top: 40px
+
+                    .button
+                        padding-left: 40px
+                        padding-right: 40px

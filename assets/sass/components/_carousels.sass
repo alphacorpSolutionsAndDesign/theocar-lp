@@ -159,6 +159,8 @@
                             background-size: auto 100%
                             background-position: center
                             border-radius: 30px
+                            transition: opacity 1s ease-in-out
+                            opacity: 0
 
                             @include media-breakpoint('md')
                                 height: 100%
@@ -193,6 +195,7 @@
 
                             img
                                 position: absolute
+                                display: block
                                 width: 250px
                                 top: 220px
                                 left: 50%
@@ -220,3 +223,51 @@
                                     top: 270px
                                     left: 0px
                                     transform: none
+
+                        .carousel-item.active, .carousel-item-next.carousel-item-start, .carousel-item-prev.carousel-item-end
+                            opacity: 1
+                            z-index: 1
+
+                    .carousel-indicators
+                        position: absolute
+                        top: -20px
+                        left: -11dvw
+                        display: none
+
+                        @include media-breakpoint('lg')
+                            display: flex
+                            flex-direction: column
+
+                        @include media-breakpoint('xl')
+                            left: -2dvw
+
+                        @include media-breakpoint('xxl')
+                            left: 10dvw
+
+                        @include media-breakpoint('xxxl')
+                            left: 25dvw
+
+                        button
+                            width: fit-content
+                            height: fit-content
+                            background: transparent
+                            opacity: 1
+
+                            .icon-indicator
+                                background: url('../img/index-our_vehicles/icon-indicator.png')
+                                background-size: cover
+                                background-repeat: no-repeat
+                                background-position: center
+                                width: 80px
+                                height: 80px
+                                transition: background 0.4s ease
+
+                            span
+                                font-size: 16px
+
+                        button.active
+                            .icon-indicator
+                                background: url('../img/index-our_vehicles/icon-indicator-active.png')
+                                background-size: cover
+                                background-repeat: no-repeat
+                                background-position: center

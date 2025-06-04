@@ -18,10 +18,10 @@
 </head>
 <body class="body__index">
     <!-- Header -->
-    <header class="index__header">
+    <header class="index__header" id="indexHeader">
         <nav class="header__nav navbar navbar-expand-lg fixed-top">
             <div class="nav__container container-fluid bg-white">
-                <a href="#" class="navbar-brand">
+                <a href="#indexHeader" class="navbar-brand">
                     <img src="assets/img/logo.png" alt="Logo">
                 </a>
                 <button
@@ -98,7 +98,7 @@
                     <!-- Desktop -->
                     <ul class="navbar-nav desktop d-none d-lg-flex ms-auto">
                         <li class="nav-item start">
-                            <a href="#start" class="nav-link active">Vehículos</a>
+                            <a href="#ourVehicles" class="nav-link active">Vehículos</a>
                         </li>
                         <li class="nav-item stepByStep">
                             <a href="#stepByStep" class="nav-link">Paso a paso</a>
@@ -210,6 +210,7 @@
 
     <!-- Main -->
     <main class="index__main">
+        <!-- Our Vehicles -->
         <section class="section main__our-vehicles" id="ourVehicles">
             <div class="our-vehicles__top">
                 <div class="top__title text-center">
@@ -270,6 +271,189 @@
                             <p class="button button-red rounded-pill">Conoce nuestros modelos</p>
                         </div>
                     </div>
+                    <!-- Indicators -->
+                    <div class="carousel-indicators text-center">
+                        <button
+                            type="button"
+                            data-bs-target="#carouselOurVehicles"
+                            data-bs-slide-to="0"
+                            aria-label="Slide 1"
+                            class="rounded-circle active"
+                        >
+                            <div class="icon-indicator"></div>
+                            <span class="fw-semibold">SUV</span>
+                        </button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselOurVehicles"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                            class="rounded-circle"
+                        >
+                            <div class="icon-indicator"></div>
+                            <span class="fw-semibold">City car</span>
+                        </button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselOurVehicles"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                            class="rounded-circle"
+                        >
+                            <div class="icon-indicator"></div>
+                            <span class="fw-semibold">Sedán</span>
+                        </button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselOurVehicles"
+                            data-bs-slide-to="3"
+                            aria-label="Slide 4"
+                            class="rounded-circle"
+                        >
+                            <div class="icon-indicator"></div>
+                            <span class="fw-semibold">Mini bus</span>
+                        </button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselOurVehicles"
+                            data-bs-slide-to="4"
+                            aria-label="Slide 5"
+                            class="rounded-circle"
+                        >
+                            <div class="icon-indicator"></div>
+                            <span class="fw-semibold">Camioneta</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps -->
+        <section class="section main__steps" id="stepByStep">
+            <div class="steps__content mx-auto">
+                <div class="content__top">
+                    <h1 class="top__title font__inter-bold">Arrienda en 3 pasos</h1>
+                    <h3 class="top__subtitle d-none d-md-block">Hazla corta con Theocar</h3>
+                </div>
+                <div class="content__down">
+                    <div class="mx-auto">
+                        <img src="assets/img/index-steps/icon-steps-1.png" alt="Step 1">
+                        <p class="text">Reserva<br>por Whatsapp</p>
+                    </div>
+                    <div class="mx-auto my-5 my-md-0">
+                        <img class="middle-dash" src="assets/img/index-steps/middle-dash.png" alt="Middle dash">
+                    </div>
+                    <div class="mx-auto my-3 my-md-0">
+                        <img src="assets/img/index-steps/icon-steps-2.png" alt="Step 2">
+                        <p class="text">Envío link<br>de contrato</p>
+                    </div>
+                    <div class="mx-auto mt-3 mb-5 my-md-0">
+                        <img class="middle-dash" src="assets/img/index-steps/middle-dash.png" alt="Middle dash">
+                    </div>
+                    <div class="mx-auto">
+                        <img src="assets/img/index-steps/icon-steps-3.png" alt="Step 3">
+                        <p class="text">Retira<br>tu vehículo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location -->
+        <section class="section main__location" id="location">
+            <div class="location__content">
+                <div class="content__top">
+                    <h1 class="top__title font__inter-bold">Estamos en el <span class="title-red">corazón</span> de la Región de Coquimbo</h1>
+                    <h3 class="top__subtitle">Avenida Balmaceda 4310, La Serena</h3>
+                </div>
+                <div class="content__bottom">
+                    <div class="bottom__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.4029188097707!2d-71.2644126882687!3d-29.93908707487256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691ca4aebfb6507%3A0xd7619041ee038b10!2sAv.%20Balmaceda%204310%2C%20La%20Serena%2C%20Coquimbo!5e0!3m2!1ses-419!2scl!4v1748995045187!5m2!1ses-419!2scl"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="gmaps"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Elections -->
+        <section class="section main__elections" id="elections">
+            <div class="elections__content">
+                <div class="content__top">
+                    <h1 class="top__title font__inter-bold text-center">¿Por qué elegirnos?</h1>
+                </div>
+                <div class="content__bottom row justify-content-center mx-auto">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-3">
+                        <div class="card election1 mx-auto">
+                            <div class="card-body">
+                                <h1 class="card-title font__inter-bold">Mejores precios</h1>
+                                <h3 class="card-text">
+                                    Precios mas económicos de la Región de Coquimbo
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-3 my-4 my-md-0">
+                        <div class="card election2 mx-auto">
+                            <div class="card-body">
+                                <h1 class="card-title font__inter-bold">Flexibilidad total</h1>
+                                <h3 class="card-text">
+                                    Diario, semanal o mensual, entrega según tu necesidad
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-12 col-md-3">
+                        <div class="card election3 mx-auto">
+                            <div class="card-body">
+                                <h1 class="card-title font__inter-bold">Flota del año</h1>
+                                <h3 class="card-text">
+                                    Autos renovados cada año para mayor seguridad
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section main__services" id="services">
+            <div class="services__content">
+                <div class="content__top">
+                    <h1 class="top__title font__inter-bold text-center">Otros <span class="title-red">traslados</span></h1>
+                    <h3 class="top__subtitle text-center">Vamos por ti a todas</h3>
+                </div>
+                <div class="content__middle row justify-content-center mx-auto">
+                    <!-- Card 1 -->
+                    <div class="col-12 col-md-5">
+                        <div class="card service1 mx-auto">
+                            <div class="card-body">
+                                <h1 class="card-title font__inter-bold">Traslado de novios & eventos</h1>
+                                <h3 class="card-text">Puntualidad y estilo para esa ocasión especial</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-12 col-md-5 mt-5 mt-md-0">
+                        <div class="card service2 mx-auto">
+                            <div class="card-body">
+                                <h1 class="card-title font__inter-bold">Traslados personal</h1>
+                                <h3 class="card-text">Comodidad y confianza en cada trayecto</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__bottom text-center">
+                    <a class="button button-red rounded-pill" href="" target="_blank">Cotizar acá</a>
                 </div>
             </div>
         </section>
