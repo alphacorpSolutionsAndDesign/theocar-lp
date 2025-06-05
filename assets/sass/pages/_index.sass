@@ -3,9 +3,7 @@
     background-size: 100% auto
     background-position: center
     width: 100%
-    height: 100dvh
-
-    .index__header
+    height: 100dvhr
 
     .index__main
         z-index: 1
@@ -16,10 +14,16 @@
             @include media-breakpoint('md')
                 height: 800px
 
+            @include media-breakpoint('xxl')
+                height: 900px
+
             .our-vehicles__top
                 .top__title
                     padding-top: 40px
                     padding-bottom: 20px
+
+                    @include media-breakpoint('sm')
+                        padding-top: 70px
 
                     @include media-breakpoint('md')
                         padding-top: 130px
@@ -160,9 +164,12 @@
 
                         .gmaps
                             width: 90%
-                            height: 280px
+                            height: 340px
                             border: none
                             border-radius: 30px
+
+                            @include media-breakpoint('sm')
+                                height: 440px
 
                             @include media-breakpoint('md')
                                 width: 80%
@@ -174,6 +181,10 @@
 
                             @include media-breakpoint('xl')
                                 height: 280px
+
+                            @include media-breakpoint('xxl')
+                                width: 80%
+                                height: 350px
 
         .main__elections
             background: $color-white
@@ -286,7 +297,7 @@
                                 background-size: 100% 100%
 
         .main__services
-            background: $color-white
+            //background: $color-white
             height: 830px
 
             @include media-breakpoint('md')
@@ -396,3 +407,234 @@
                     .button
                         padding-left: 40px
                         padding-right: 40px
+
+        .main__contact
+            background: $color-white
+            height: 900px
+
+            @include media-breakpoint('sm')
+                height: 750px
+
+            @include media-breakpoint('md')
+                height: 850px 
+                overflow: hidden
+
+            @include media-breakpoint('lg')
+                height: 800px
+
+            @include media-breakpoint('xl')
+                height: 600px
+
+            @include media-breakpoint('xxl')
+                height: 800px
+
+            @include media-breakpoint('xxxl')
+                height: 900px
+                
+
+            .contact__content
+                height: fit-content
+
+                .content__top
+                    margin-left: 0
+
+                    @include media-breakpoint('md')
+                        margin-left: 50px
+
+                    .top__title
+                        padding-top: 50px
+                        font-size: 40px
+                        text-align: center
+
+                        @include media-breakpoint('md')
+                            padding-top: 100px
+                            font-size: 61px
+                            text-align: start
+
+                    .top__subtitle
+                        font-size: 22px
+                        text-align: center
+
+                        @include media-breakpoint('md')
+                            font-size: 36px
+                            text-align: start
+
+                .content__middle
+                    position: relative
+                    top: 30px
+
+                    @include media-breakpoint('xl')
+                        top: -125px
+
+                    .image
+                        background: url('../img/index-contact/contact-mobile.png')
+                        background-size: 100% 100%
+                        height: 500px
+                        margin: 0 auto
+
+                        @include media-breakpoint('sm')
+                            background: url('../img/index-contact/contact.png')
+                            background-size: 100% 100%
+                            width: 550px
+                            height: 350px
+                            
+                        @include media-breakpoint('md')
+                            width: 750px
+                            height: 450px
+
+                        @include media-breakpoint('lg')
+                            margin-left: auto
+                            margin-right: 39px
+
+                        @include media-breakpoint('xxl')
+                            width: 900px
+                            height: 550px
+
+                        @include media-breakpoint('xxxl')
+                            width: 1200px
+                            height: 700px
+                
+                .contact__bottom
+                    position: relative
+                    top: 70px
+                    text-align: center
+
+                    @include media-breakpoint('lg')
+                        text-align: start
+                        top: -340px
+                        left: 39px
+
+                    @include media-breakpoint('xxl')
+                        top: -450px
+
+                    @include media-breakpoint('xxxl')
+                        top: -600px
+
+                    .button
+                        padding-left: 40px
+                        padding-right: 40px
+
+    .index__footer
+        background: $color-white
+        height: 410px
+        box-shadow: 0 -14px 0 $color-red
+        overflow: hidden
+
+        @include media-breakpoint('sm')
+            height: 420px
+
+        @include media-breakpoint('md')
+            box-shadow: 0 -8px 0 $color-red
+
+        @include media-breakpoint('lg')
+            height: 350px
+
+        .footer__content
+            .content__top
+                position: relative
+                width: 100%
+                padding-top: 70px
+                display: inline-flex
+                justify-content: center
+
+                @include media-breakpoint('lg')
+                    width: 30%
+                    float: inline-end
+                    top: 75px
+                    right: 20px
+
+                div
+                    a
+                        img
+                            width: 100%
+
+                .rrss-icon
+                    width: 45px
+
+                .rrss-icon.icon-whatsapp
+                    margin: 0 20%
+
+            .content__middle
+                position: relative
+                text-align: center
+                top: 100px
+                display: flex
+
+                @include media-breakpoint('lg')
+                    text-align: start
+                    top: 70px
+                    left: 26px
+
+                @include media-breakpoint('xxl')
+                    left: 50px
+
+                @include media-breakpoint('xxxl')
+                    left: 100px
+
+                a
+                    margin: 0 auto
+
+                    @include media-breakpoint('lg')
+                        margin: 0
+
+                    img
+                        width: 300px
+                        margin: 0 auto
+
+                        @include media-breakpoint('sm')
+                            width: 350px
+
+                        @include media-breakpoint('lg')
+                            width: 317px
+                            margin: 0
+
+                        @include media-breakpoint('xxl')
+                            width: 400px
+
+                        @include media-breakpoint('xxxl')
+                            width: 500px
+
+                .middle__info
+                    position: relative
+                    top: 40px
+                    left: 70px
+
+                    @include media-breakpoint('lg')
+                        left: 100px
+
+                    @include media-breakpoint('xxl')
+                        top: 50px
+
+                    @include media-breakpoint('xxxl')
+                        left: 200px
+
+                    h4
+                        line-height: 10px
+
+                    hr
+                        border: 3px solid $color-black
+                        opacity: 1
+
+                    .info
+                        display: grid
+                        grid-template-columns: 1fr 2fr
+                        font-size: 13px
+                        line-height: 20px
+                        font-weight: 600
+
+            .content__bottom
+                position: relative
+                text-align: center
+                top: 100px
+
+                @include media-breakpoint('lg')
+                    top: 100px
+                    text-align: start
+                    left: 26px
+
+                @include media-breakpoint('xxl')
+                    left: 50px
+
+                h5
+                    padding-top: 60px
+                    font-style: italic

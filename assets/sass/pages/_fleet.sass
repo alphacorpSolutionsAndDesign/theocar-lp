@@ -1,0 +1,191 @@
+.body__fleet
+    .fleet__main
+        margin-top: 130px
+        margin-bottom: 130px
+
+        .accordion
+            .accordion-item
+                .accordion-header
+                    button
+                        background: $color-red
+                        color: $color-white
+                        font-size: 30px
+
+                    button::after
+                        --bs-accordion-btn-color: $color-white
+
+                .collapse
+                    .accordion-body
+                        div
+                            .card
+                                height: 470px
+                                margin-top: 15px
+                                margin-bottom: 15px
+                                border-radius: 30px
+                                filter: drop-shadow(2px 2px 3px $color-grey)
+
+                                @include media-breakpoint('lg')
+                                    border-radius: 20px
+
+                                .card-img
+                                    width: 80%
+                                    margin: 0 auto
+
+                                    img
+                                        width: 100%
+
+                                .card-body
+                                    position: absolute
+                                    width: 100%
+                                    top: 190px
+
+                                    .card-title
+                                        width: 90%
+                                        font-size: 26px
+                                        margin: 0 auto
+
+                                    .card-text
+                                        width: 90%
+                                        font-size: 22px
+                                        margin: 0 auto
+
+                                    hr
+                                        width: 90%
+                                        margin: 15px auto
+                                        border: 2px solid $color-red
+                                        opacity: 1
+
+                                    .card-detail
+                                        width: 90%
+                                        font-size: 16px
+                                        margin: 0 auto
+
+                                    .card-list
+                                        position: absolute
+                                        top: 170px
+                                        margin: 0 auto 0 10px
+
+    .fleet__footer
+        background: $color-white
+        height: 410px
+        box-shadow: 0 -14px 0 $color-red
+        overflow: hidden
+
+        @include media-breakpoint('sm')
+            height: 420px
+
+        @include media-breakpoint('md')
+            box-shadow: 0 -8px 0 $color-red
+
+        @include media-breakpoint('lg')
+            height: 350px
+
+        .footer__content
+            .content__top
+                position: relative
+                width: 100%
+                padding-top: 70px
+                display: inline-flex
+                justify-content: center
+
+                @include media-breakpoint('lg')
+                    width: 30%
+                    float: inline-end
+                    top: 75px
+                    right: 20px
+
+                div
+                    a
+                        img
+                            width: 100%
+
+                .rrss-icon
+                    width: 45px
+
+                .rrss-icon.icon-whatsapp
+                    margin: 0 20%
+
+            .content__middle
+                position: relative
+                text-align: center
+                top: 100px
+                display: flex
+
+                @include media-breakpoint('lg')
+                    text-align: start
+                    top: 70px
+                    left: 26px
+
+                @include media-breakpoint('xxl')
+                    left: 50px
+
+                @include media-breakpoint('xxxl')
+                    left: 100px
+
+                a
+                    margin: 0 auto
+
+                    @include media-breakpoint('lg')
+                        margin: 0
+
+                    img
+                        width: 300px
+                        margin: 0 auto
+
+                        @include media-breakpoint('sm')
+                            width: 350px
+
+                        @include media-breakpoint('lg')
+                            width: 317px
+                            margin: 0
+
+                        @include media-breakpoint('xxl')
+                            width: 400px
+
+                        @include media-breakpoint('xxxl')
+                            width: 500px
+
+                .middle__info
+                    position: relative
+                    top: 40px
+                    left: 70px
+
+                    @include media-breakpoint('lg')
+                        left: 100px
+
+                    @include media-breakpoint('xxl')
+                        top: 50px
+
+                    @include media-breakpoint('xxxl')
+                        left: 200px
+
+                    h4
+                        line-height: 10px
+
+                    hr
+                        border: 3px solid $color-black
+                        opacity: 1
+
+                    .info
+                        display: grid
+                        grid-template-columns: 1fr 2fr
+                        font-size: 13px
+                        line-height: 20px
+                        font-weight: 600
+
+            .content__bottom
+                position: relative
+                text-align: center
+                top: 100px
+
+                @include media-breakpoint('lg')
+                    top: 100px
+                    text-align: start
+                    left: 26px
+
+                @include media-breakpoint('xxl')
+                    left: 50px
+
+                h5
+                    padding-top: 60px
+                    font-style: italic

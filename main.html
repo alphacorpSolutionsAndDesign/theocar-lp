@@ -8,17 +8,26 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
     <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"
+    ></script>
+    <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"
     ></script>
-    <!-- <script src="assets/js/carousel.js"></script> -->
+    <script src="assets/js/navigation.js"></script>
 
     <title>TheoCar | Rent A Car</title>
 </head>
 <body class="body__index">
     <!-- Header -->
     <header class="index__header" id="indexHeader">
+        <div class="floating-button">
+            <a class="d-lg-none" href="https://wa.me/+56966923423" target="_blank"><img src="assets/img/floating-whatsapp.png" alt="Whatsapp"></a>
+            <a class="d-none d-lg-block button button-whatsapp rounded-pill" href="https://wa.me/+56966923423" target="_blank"><span class="bi bi-whatsapp text-green me-2"></span>Hablemos</a>
+        </div>
         <nav class="header__nav navbar navbar-expand-lg fixed-top">
             <div class="nav__container container-fluid bg-white">
                 <a href="#indexHeader" class="navbar-brand">
@@ -33,7 +42,7 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                 >
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon fw-bold"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Mobile -->
@@ -46,7 +55,7 @@
                             <button
                                 class="border-0 bg-transparent py-2"
                                 id="mobile__navStart"
-                                data-nav-target="start"
+                                data-nav-target="ourVehicles"
                             >Vehículos</button>
                         </li>
                         <!-- Link Step by step -->
@@ -113,7 +122,7 @@
                             <a href="#contact" class="nav-link">Contacto</a>
                         </li>
                     </ul>
-                    <a href="https://wa.me/+56966923423" class="button button-red-whatsapp-icon rounded-pill" target="_blank">
+                    <a href="https://wa.me/+56966923423" class="button button-red-whatsapp-icon rounded-pill d-none d-md-block" target="_blank">
                         <span class="span icon bi bi-whatsapp fs-5 pe-2"></span>
                         <span class="span text">+56 9 6692 3423</span>
                     </a>
@@ -215,7 +224,7 @@
             <div class="our-vehicles__top">
                 <div class="top__title text-center">
                     <h1 class="font__inter-bold">Todos nuestros vehículos</h1>
-                    <p>Theocar a tu disposición</p>
+                    <p><span class="font__inter-bold">THEO<span class="title-red">CAR</span></span> a tu disposición</p>
                 </div>
             </div>
             <div class="our-vehicles__bottom">
@@ -228,7 +237,7 @@
                                 Recorre la ciudad junto a tu familia, con total comodidad.
                             </p>
                             <img src="assets/img/index-our_vehicles/suv.png" alt="SUV">
-                            <p class="button button-red rounded-pill">Conoce nuestros modelos</p>
+                            <a class="button button-red rounded-pill" href="fleet.html">Conoce nuestros modelos</a>
                         </div>
 
                         <!-- Slide 2 -->
@@ -238,7 +247,7 @@
                                 Muévete ágil por la ciudad, ideal para días dinámicos y estacionar sin problemas.
                             </p>
                             <img src="assets/img/index-our_vehicles/city-car.png" alt="City car">
-                            <p class="button button-red rounded-pill">Conoce nuestros modelos</p>
+                            <a class="button button-red rounded-pill" href="fleet.html">Conoce nuestros modelos</a>
                         </div>
 
                         <!-- Slide 3 -->
@@ -248,7 +257,7 @@
                                 Comodidad y estilo para tus trayectos diarios o escapadas de fin de semana.
                             </p>
                             <img src="assets/img/index-our_vehicles/sedan.png" alt="City car">
-                            <p class="button button-red rounded-pill">Conoce nuestros modelos</p>
+                            <a class="button button-red rounded-pill" href="fleet.html">Conoce nuestros modelos</a>
                         </div>
 
                         <!-- Slide 4 -->
@@ -258,7 +267,7 @@
                                 Traslada grupos con espacio y eficiencia, perfecto para eventos o equipos de trabajo.
                             </p>
                             <img src="assets/img/index-our_vehicles/mini-bus.png" alt="City car">
-                            <p class="button button-red rounded-pill">Conoce nuestros modelos</p>
+                            <a class="button button-red rounded-pill" href="fleet.html">Conoce nuestros modelos</a>
                         </div>
 
                         <!-- Slide 5 -->
@@ -268,7 +277,7 @@
                                 Potencia y espacio para llegar donde otros no pueden. Ideal para terrenos exigentes o trabajo pesado.
                             </p>
                             <img src="assets/img/index-our_vehicles/camioneta.png" alt="City car">
-                            <p class="button button-red rounded-pill">Conoce nuestros modelos</p>
+                            <a class="button button-red rounded-pill" href="fleet.html">Conoce nuestros modelos</a>
                         </div>
                     </div>
                     <!-- Indicators -->
@@ -333,7 +342,7 @@
             <div class="steps__content mx-auto">
                 <div class="content__top">
                     <h1 class="top__title font__inter-bold">Arrienda en 3 pasos</h1>
-                    <h3 class="top__subtitle d-none d-md-block">Hazla corta con Theocar</h3>
+                    <h3 class="top__subtitle d-none d-md-block">Hazla corta con <span class="font__inter-bold"><span class="text-grey">THEO</span>CAR</span></h3>
                 </div>
                 <div class="content__down">
                     <div class="mx-auto">
@@ -453,15 +462,68 @@
                     </div>
                 </div>
                 <div class="content__bottom text-center">
-                    <a class="button button-red rounded-pill" href="" target="_blank">Cotizar acá</a>
+                    <a class="button button-red rounded-pill" href="https://wa.me/+56966923423" target="_blank">Cotizar acá</a>
                 </div>
             </div>
         </section>
+
+        <!-- Contact -->
+         <section class="section main__contact" id="contact">
+            <div class="contact__content">
+                <div class="content__top">
+                    <h1 class="top__title font__inter-bold">Vive<br class="d-md-none"> el norte</h1>
+                    <h3 class="top__subtitle">Tu aventura está por <span class="title-red">empezar</span></h3>
+                </div>
+                <div class="content__middle">
+                    <div class="image"></div>
+                </div>
+                <div class="contact__bottom">
+                    <a class="button button-red rounded-pill" href="https://wa.me/+56966923423" target="_blank">Arrienda acá!</a>
+                </div>
+            </div>
+         </section>
     </main>
 
     <!-- Footer -->
     <footer class="index__footer">
-
+        <div class="footer__content">
+            <div class="content__top">
+                <div class="rrss-icon icon-instagram">
+                    <a href="https://www.instagram.com/theocar_rent/" target="_blank">
+                        <img src="assets/img/index-footer/icon-instagram.png" alt="Instagram">
+                    </a>
+                </div>
+                <div class="rrss-icon icon-whatsapp">
+                    <a href="https://wa.me/+56966923423" target="_blank">
+                        <img src="assets/img/index-footer/icon-whatsapp.png" alt="Whatsapp">
+                    </a>
+                </div>
+                <div class="rrss-icon icon-facebook">
+                    <a href="https://www.facebook.com/theo.car.1" target="_blank">
+                        <img src="assets/img/index-footer/icon-facebook.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="content__middle">
+                <a href="#indexHeader">
+                    <img src="assets/img/logo.png" alt="Logo">
+                </a>
+                <div class="middle__info d-none d-lg-block">
+                    <h4 class="font__inter-bold">Contacto&nbsp;&nbsp;</h4>
+                    <hr>
+                    <div class="info">
+                        <div>Red fija</div><div>&nbsp;&nbsp;+56 512 243 770</div>
+                        <div>Oficina 1</div><div>&nbsp;&nbsp;+569 4420 6328</div>
+                        <div>Oficina 2</div><div>&nbsp;&nbsp;+569 9579 5471</div>
+                        <div>Whatsapp</div><div>&nbsp;&nbsp;+569 4420 6328</div>
+                        <div>Email</div><div>&nbsp;&nbsp;contacto@theocar.cl</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__bottom">
+                <h5 class="fs-6">Creado con cariño por Chuki y Germán</h5>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

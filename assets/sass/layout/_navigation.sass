@@ -1,5 +1,20 @@
-.body__index
-    .index__header
+.body__index, .body__fleet
+    .index__header, .fleet__header
+        .floating-button
+            position: fixed
+            z-index: 10
+            right: 10px
+            bottom: 10px
+            filter: drop-shadow(3px 3px 5px $color-grey)
+
+            @include media-breakpoint('lg')
+                right: 20px
+                bottom: 20px
+
+            a
+                img
+                    width: 60px
+
         .header__nav
             padding-top: 20px
 
@@ -9,6 +24,7 @@
                 margin-right: 14.5px
                 padding-left: 0
                 padding-right: 0
+                border: 2px solid $color-red
 
                 @include media-breakpoint('lg')
                     margin-left: 33.5px
@@ -22,13 +38,9 @@
 
                 .navbar-toggler
                     margin-right: 32px
-
-                    span
+                    border: none
 
                 .collapse.navbar-collapse
-                    .navbar-nav.mobile
-
-
                     .navbar-nav.desktop
                         .nav-item
                             margin-left: 18px
@@ -36,6 +48,13 @@
 
                             .nav-link
                                 padding: 0
+                                font-size: 16px
+
+                                @include media-breakpoint('lg')
+                                    font-size: 13px
+
+                                @include media-breakpoint('xl')
+                                    font-size: 16px
 
                         .nav-item.start
                             margin-left: 0
@@ -48,3 +67,9 @@
                     .button-red-whatsapp-icon
                         margin-left: 36px
                         margin-right: 32px
+
+                        @include media-breakpoint('lg')
+                            font-size: 13px
+
+                        @include media-breakpoint('xl')
+                            font-size: 16px
